@@ -53,6 +53,7 @@ drop table RESTORAN cascade constraints;
 create table DETAIL_PESANAN  (
    ID_PESANAN           VARCHAR2(10)                    not null,
    ID_MAKANAN           VARCHAR2(10)                    not null,
+   JUMLAH_MAKANAN       NUMBER(2),
    constraint PK_DETAIL_PESANAN primary key (ID_PESANAN, ID_MAKANAN)
 );
 
