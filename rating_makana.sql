@@ -1,0 +1,10 @@
+insert into rating_makanan values ('PBLI1', 'MKN22', 5);
+insert into rating_makanan values ('PBLI1', 'MKN23', 5);
+insert into rating_makanan values ('PBLI1', 'MKN24', 5);
+insert into rating_makanan values ('PBLI1', 'MKN25', 5);
+insert into rating_makanan values ('PBLI1', 'MKN26', 5);
+insert into rating_makanan values ('PBLI1', 'MKN27', 5);
+insert into rating_makanan values ('PBLI1', 'MKN28', 5);
+insert into rating_makanan values ('PBLI1', 'MKN29', 5);
+insert into rating_makanan values ('PBLI1', 'MKN30', 5);
+insert into rating_makanan values ('PBLI1', 'MKN31', 5);

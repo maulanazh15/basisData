@@ -132,7 +132,6 @@ create table RESTORAN  (
    NAMA_RESTORAN        VARCHAR2(50),
    ALAMAT_RESTORAN      VARCHAR2(200),
    NO_TEL_RESTORAN      VARCHAR2(12),
-   RATING_RESTORAN      FLOAT,
    constraint PK_RESTORAN primary key (ID_RESTORAN)
 );
 
