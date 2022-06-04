@@ -1,0 +1,10 @@
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Fred Siggens', '3565503488');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Tuesday Bernette', '1626310621');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Cati Malcher', '2476865272');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Natka Scoterbosh', '9887739855');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Jens Sepey', '8191173250');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Nathalie Scyner', '9431529488');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Nixie Dast', '9464049527');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Margarethe Killelea', '4244328695');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Gates O''Shiel', '5989615383');
+insert into driver(id_driver,nama_driver,no_tel_driver) values ('DRV'|| DRIVER_SEQ.NEXTVAL,'Edie Keegan', '3121534792');
