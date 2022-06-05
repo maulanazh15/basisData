@@ -4,6 +4,11 @@ execute add_pesanan('PBLI3','DRV3');
 execute add_pesanan('PBLI4','DRV4');
 execute add_pesanan('PBLI5','DRV5');
 execute add_pesanan('PBLI6','DRV6');
+execute add_pesanan('PBLI7','DRV7');
+execute add_pesanan('PBLI8','DRV8');
+execute add_pesanan('PBLI9','DRV9');
+execute add_pesanan('PBLI10','DRV10');
+
 execute add_rating_driver('PBLI1','DRV2',4);
 execute add_rating_driver('PBLI2','DRV2',4);
 execute add_rating_driver('PBLI3','DRV2',4);

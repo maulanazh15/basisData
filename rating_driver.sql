@@ -27,3 +27,27 @@ insert into RATING_DRIVER values ('PBLI14' , 'DRV2', 4);
 insert into RATING_DRIVER values ('PBLI14' , 'DRV3', 4);
 insert into RATING_DRIVER values ('PBLI14' , 'DRV4', 3);
 insert into RATING_DRIVER values ('PBLI14' , 'DRV5', 5);
+
+
+
+execute add_rating_driver('PBLI1', 'DRV1', 5);
+execute add_rating_driver('PBLI1', 'DRV2', 5);
+execute add_rating_driver('PBLI1', 'DRV3', 4);
+execute add_rating_driver('PBLI1', 'DRV4', 5);
+execute add_rating_driver('PBLI1', 'DRV5', 5);
+execute add_rating_driver('PBLI1', 'DRV6', 2);
+execute add_rating_driver('PBLI1', 'DRV7', 3);
+execute add_rating_driver('PBLI1', 'DRV8', 5);
+execute add_rating_driver('PBLI1', 'DRV9', 4);
+execute add_rating_driver('PBLI1', 'DRV10', 5);
+execute add_rating_driver('PBLI2', 'DRV1', 5);
+execute add_rating_driver('PBLI2', 'DRV2', 5);
+execute add_rating_driver('PBLI2', 'DRV3', 5);
+execute add_rating_driver('PBLI2', 'DRV4', 5);
+execute add_rating_driver('PBLI2', 'DRV5', 5);
+execute add_rating_driver('PBLI2', 'DRV6', 5);
+execute add_rating_driver('PBLI2', 'DRV7', 4);
+execute add_rating_driver('PBLI2', 'DRV8', 1);
+execute add_rating_driver('PBLI2', 'DRV9', 3);
+execute add_rating_driver('PBLI2', 'DRV10', 3);
+execute add_rating_driver('PBLI3', 'DRV1', 6);

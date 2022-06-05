@@ -29,14 +29,24 @@ create or replace procedure calculate_rating_makanan(id_makanan1 in varchar2)
 create or replace procedure add_rating_driver(id_pembeli in varchar2, id_driver in varchar2, rating in number)
    as
    begin
-      insert into RATING_DRIVER values (id_pembeli, id_driver, rating);
+      if (rating > 0 and rating <= 5) then
+         insert into RATING_DRIVER(ID_PEMBELI, ID_DRIVER, RATING_DRIVER)
+            values(id_pembeli, id_driver, rating);
+      else 
+         raise_application_error(-20000, 'Rating harus antara 1-5');
+      end if;
    end;
 /
 
 create or replace procedure add_rating_makanan(id_pembeli in varchar2, id_makanan in varchar2, rating in number)
    as
    begin
-      insert into RATING_MAKANAN values (id_pembeli, id_makanan, rating);
+      if (rating > 0 and rating <= 5) then
+         insert into RATING_MAKANAN(ID_PEMBELI, ID_MAKANAN, RATING_MAKANAN)
+            values(id_pembeli, id_makanan, rating);
+      else 
+         raise_application_error(-20000, 'Rating harus antara 1-5');
+      end if;
    end;
 /
 
@@ -57,28 +67,40 @@ create or replace procedure add_driver(nama_driver in varchar2, no_tel_driver in
 create or replace procedure add_restoran(nama_restoran in varchar2, alamat_restoran in varchar2, no_tel_restoran in varchar2)
    as
    begin
-      insert into RESTORAN(id_restoran, nama_restoran, alamat_restoran, no_tel_restoran) values ('RSTRN'|| RESTORAN_SEQ.nextval, nama_restoran, alamat_restoran, no_tel_restoran);
+      insert into RESTORAN values ('RSTRN'|| RESTORAN_SEQ.nextval, 
+            nama_restoran, 
+            alamat_restoran, 
+            no_tel_restoran);
    end;
 /
 
 create or replace procedure add_makanan(nama_makanan in varchar2, harga_makanan in number, id_restoran in varchar2)
    as
    begin
-      insert into MAKANAN(id_makanan, nama_makanan, harga_makanan, id_restoran) values ('MKN'|| MAKANAN_SEQ.nextval, nama_makanan, harga_makanan, id_restoran);
+      insert into MAKANAN(id_makanan, nama_makanan, harga_makanan, id_restoran) values ('MKN'|| MAKANAN_SEQ.nextval, 
+               nama_makanan, 
+               harga_makanan, 
+               id_restoran);
    end;
 /
 
 create or replace procedure add_pesanan(id_pembeli in varchar2, id_driver in varchar2)
    as
    begin
-      insert into PESANAN(id_pesanan, id_pembeli, id_driver, tanggal_pemesanan) values ('PSN'|| PESANAN_SEQ.nextval, id_pembeli, id_driver, systimestamp);
+      insert into PESANAN(id_pesanan, id_pembeli, id_driver, tanggal_pemesanan) values ('PSN'|| PESANAN_SEQ.nextval, 
+               id_pembeli, 
+               id_driver, 
+               systimestamp);
    end;
 /
 
 create or replace procedure add_detail_pesanan(id_pesanan in varchar2, id_makanan in varchar2, jumlah_makanan in number)
    as
    begin
-      insert into DETAIL_PESANAN(id_pesanan, id_makanan, jumlah_makanan) values (id_pesanan, id_makanan, jumlah_makanan);
+      insert into DETAIL_PESANAN(id_pesanan, id_makanan, jumlah_makanan) values (
+               id_pesanan, 
+               id_makanan, 
+               jumlah_makanan);
    end;
 /
 
